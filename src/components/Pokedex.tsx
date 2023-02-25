@@ -2,7 +2,7 @@ import {
   createQuery,
   QueryClient,
   QueryClientProvider,
-} from "../../../solid-lib-starter/src";
+} from "@adeora/solid-query";
 import type { IPokemon } from "pokeapi-typescript";
 import { createSignal, For, Index, Show } from "solid-js";
 
