@@ -1,4 +1,6 @@
 ---
+import Pokedex from '../components/Pokedex';
+import '../styles/base.css';
 ---
 
 <html lang="en">
@@ -9,7 +11,12 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="bg-[#0c2a4d]">
+		<div class="absolute inset-0 -z-10">
+			<img src="/pokeball.png" alt="Pokeball" class="absolute bottom-8 left-8 -rotate-12 h-48" />
+			<!-- <img src="/images.jpg" alt="Background" class="absolute top-0 left-0 w-full h-full object-cover" /> -->
+		</div>
+		<h1 class="text-neutral-100 font-medium text-3xl text-center py-8">Astro + Solid Query v5</h1>
+		<Pokedex client:load />
 	</body>
 </html>
