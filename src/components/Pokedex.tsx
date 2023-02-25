@@ -25,6 +25,7 @@ const Pokedex = () => {
     initialData: pokemon() == 1 ? firstPokemon : undefined,
     // Keep previous data around while loading new data
     placeholderData: (prev) => prev,
+    staleTime: 1000 * 60,
   }));
 
   return (
